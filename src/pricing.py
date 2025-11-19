@@ -7,7 +7,7 @@ def parse_price(text):
         s = s[1:]
     s = s.replace(",", "")
     return float(s)
-
+    
 def format_currency(value):
     # Always 2 decimals, prefixed with $
     return "$" + f"{float(value):0.2f}"
